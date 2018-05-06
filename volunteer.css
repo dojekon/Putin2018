@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Graphik_LC;
+    /* Гарнитура шрифта */
+    src: url(fonts/Graphik_LC.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+.clear3 {
+    margin: 3%;
+}
+
+.clear5 {
+    margin: 5%;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+.p2018 {
+    font-family: 'Graphik_LC', sans-serif;
+    font-size: 2em;
+    /* 2018 */
+    float: left;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #f30;
+}
+
+
+.putin {
+    font-family: 'Graphik_LC', sans-serif;
+    font-size: 2em;
+
+    float: left;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #0d7fa3;
+}
+
+.ovp-container {
+    position: relative;
+
+    min-width: 280px;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.ovp-scheme:first-child {
+    border-left: 1px solid #ededed;
+}
+
+.ovp-scheme {
+    position: relative;
+
+    overflow: hidden;
+
+    font-weight: 700;
+    color: #0D7FA3FF;
+
+    height: 140px;
+    margin: 32px -1px 32px 0;
+    padding: 40px 32px;
+    transition: all .3s ease;
+    text-align: center;
+
+    border-top: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+
+
+.ovp-scheme>img {
+    margin-bottom: 16px;
+}
+
+.ovp-scheme:before {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+
+    content: '';
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(237, 237, 237);
+    -o-border-image: initial;
+       border-image: initial;
+    background: rgb(255, 255, 255);
+}
+
+.anketa {
+	border-radius: 20px;
+    border: 2px solid #CECECEFF;
+    padding: 3%;
+    padding-top: 1%;
+}
+
+.form-group {
+	margin-top: 25px;
+}
+
+.rmx-check{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	margin-right: 1%;
+	outline:0;
+	background-color:transparent;
+	border:1px solid #d3d3d3;
+	padding:0;cursor:pointer;
+	height:22px;
+	width:22px;
+	border-radius:0;
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+}
+@media (max-width: 767px) {
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clear5 {
+        margin-bottom: 10%;
+    }
+
+    .ovp-scheme {
+        border: 1px solid #ededed;
+        margin: -1px 0 0;
+        height: auto;
+    }
+}

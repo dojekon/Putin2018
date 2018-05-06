@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>Путин - наш вождь!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <meta name="description" content="Сайт избирательной кампании Владимира Владимировича Путина">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <header>
+                <div id="logo">
+                    <img src="images/index/flag.gif" alt="Российский флаг">
+                    <div id="slog">
+                        <p class="putin"><span>ПУТИН </span></p>
+                        <p class="p2018"><span>20!8</span></p>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <a href="#fourth-ahchor" title="Поддержать кандидата">
+                        <div class="btn">
+                            Мы - за Путина!
+                        </div>
+                    </a>
+                    <a href="#third-anchor" title="Оставить подпись за выдвижение кандидата">
+                        <div class="btn">
+                            Волонтеры
+                        </div>
+                    </a>
+                    <a href="#second-anchor" title="Просмотреть программу">
+                        <div class="btn">
+                            Программа
+                        </div>
+                    </a>
+                    <a href="#first-anchor" title="Просмотреть информацию о кандидате">
+                        <div class="btn">
+                            О кандидате
+                        </div>
+                    </a>
+                </div>
+            </header>
+            <main>
+                <!-- Джимботрон -->
+                <div class="banner">
+                    <div class="banner-slogan">
+                        <p><span>Владимир Путин — </span>
+                            <br>
+                            <span>народный избранник!</span></p>
+                    </div>
+                    <div class="welcome">
+                        <div class="welcome-text">
+                            ​Здравствуйте, меня зовут Владимир Путин. Этот сайт создан с целью ознакомить граждан с моей программой на следующие 6 лет.
+                            <br> Несомненно, основным приоритетом является повышение уровня жизни населения, увеличения пенсий, зарплат и прочих пособий.
+                            <div class="clear"></div>
+                            У меня уже есть подробный план действий по этому направлению и именно поэтому я и выдвигаюсь на пост президента.
+                            <br> Сделаем Россию достойной вместе!
+                            <div class="clear"></div>
+                            Воспользовавшись формой ниже, вы можете задать мне вопрос, касательно моей избирательной программы или внести предложение.
+                            <div class="form">
+                                <input class="email" type="email" name="email" placeholder="Ваша электронная почта">
+                                <button class="send" type="submit" onclick="sendEmail();">
+                                    Задать вопрос</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Новости -->
+                <section class="last-news">
+                    <div class="last-news--container">
+                        <div class="last-news--title">
+                            <span>Последние новости:</span>
+                        </div>
+                        <div class="last-news--items">
+                            <article class="last-news--item">
+                                <h3 class="last-news--title">
+									<a href="#">Путин и Роухани обсудили сотрудничество России, Ирана и Турции по Сирии </a>
+								</h3>
+                            </article>
+                            <hr noshade class="vertical">
+                            <article class="last-news--item">
+                                <h3 class="last-news--title">
+									<a href="#">Путин совершит двухдневную рабочую поездку в Сибирь</a>
+								</h3>
+                            </article>
+                            <hr noshade class="vertical">
+                            <article class="last-news--item">
+                                <h3 class="last-news--title">
+									<a href="#">Путин подписал закон о волонтерстве</a>
+								</h3>
+                            </article>
+                            <hr noshade class="vertical">
+                            <article class="last-news--item">
+                                <h3 class="last-news--title">
+									<a href="#">Путин ратифицировал протокол о списании остатка долга Киргизии</a>
+								</h3>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- Конец новостей -->
+                <hr class="after">
+                <!-- О кандидате -->
+                <article class="about-candidate" id="first-anchor">
+                    <div class="about-candidate--container">
+                        <div class="r-clear"></div>
+                        <div class="about-candidate--span">
+                            <span>О кандидате:</span>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="about-candidate-info">
+                            <img class="putin-krasavchik" src="images/index/about.png" alt="Портрет Владимира Владимировича">
+                            <p><span class="about-candidate--span">Вперед - к сильной России вместе!</span>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="about-putin--text">
+                                    Владимир Владимирович Путин – выдающийся политический и государственный деятель России, действующий Президент Российской Федерации, бывший председатель партии «Единая Россия». С 2000 года стал преемником экс-президента России Бориса Ельцина на посту главы государства, он уже третий президентский срок руководит страной. Во всех президентских выборах глава России побеждал в первом туре, набирая более 50% голосов избирателей. Благодаря успешной и четкой работе российского президента в стране произошли кардинальные изменения как в экономике, так и в политике, ввиду чего многие эксперты называют Россию-2008 и Россию-2000 абсолютно разными государствами.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="r-clear"></div>
+                    <br>
+                    <div class="clear--candidate"> </div>
+                    <article class="about-candidate--item">
+                        <h1 class="about-candidate--title">Создание материнского капитала</h1>
+                        <button class="plus" type="button">
+                            <h1>+</h1>
+                        </button>
+                        <div class="spoiler-content">
+                            Программа материнского (семейного) капитала — это форма государственной поддержки российских семей, имеющих детей. Данный вид государственной социальной помощи оказывается российским гражданам с 1 января 2007 года при рождении или усыновлении до 31 декабря 2021 года второго, третьего или последующего ребенка, имеющего российское гражданство, при условии, что родители ранее не воспользовались правом на дополнительные меры государственной социальной поддержки.
+                            <br><b>Сумма маткапитала на 2016 и 2017 год не меняется, размер сертификата сейчас составляет 453026 ₽</b>
+                        </div>
+                    </article>
+                    <article class="about-candidate--item">
+                        <h1 class="about-candidate--title">Сохранение и укрепление международного влияния России
+							</h1>
+                        <button class="plus" type="button">
+                            <h1>+</h1></button>
+                        <div class="spoiler-content">
+                            Россия – член Совбеза ООН, страна, обладающая правом вето, а также равноправный (и в ряде случаев весьма влиятельный) участник большинства крупных международных альянсов. Кроме того, при Владимире Путине были созданы и эффективно действуют альтернативные западным структурам союзы. Например, ШОС, ОДКБ.
+                            <br><b> Развивается экономическая интеграция на основе ЕврАзЭС, увеличивается роль БРИКС.</b>
+                        </div>
+                    </article>
+                    <article class="about-candidate--item">
+                        <h1 class="about-candidate--title">Возвращение Крыма
+							</h1>
+                        <button class="plus" type="button">
+                            <h1>+</h1></button>
+                        <div class="spoiler-content">
+                            <b>В марте 2014 года к родному причалу после долгого «плавания» вернулись Крым и Севастополь.</b> Под зубовный скрежет киевских политиков Запад воздает должное блестяще реализованному сценарию, позволившему мирно и бескровно обеспечить волеизъявление крымчан, пожелавших связать свое будущее с Россией.
+                        </div>
+                    </article>
+                    <article class="about-candidate--item">
+                        <h1 class="about-candidate--title">Возрождение армии и флота
+							</h1>
+                        <button class="plus" type="button">
+                            <h1>+</h1></button>
+                        <div class="spoiler-content">
+                            <b>При Владимире Путине появился новый образ вооруженных сил – сильных, современных, хорошо обученных и качественно оснащенных. Принята и реализуется Государственная программа вооружений, обновляются арсеналы соединений и воинских частей, строятся новые военные городки.</b>
+                            <br>Выполняются социальные обязательства, немыслимые даже для времен СССР: например, это касается выдачи офицерам «живых» денег на покупку собственного жилья. Конкурс в военные вузы зашкаливает за рекордные показатели. Американский журнал The National Interest недавно поставил российские вооруженные силы на второе место в мире после армии США, при том что военные расходы России существенно меньше американских.
+                        </div>
+                    </article>
+                    <article class="about-candidate--item">
+                        <h1 class="about-candidate--title">Снижение ипотечных ставок
+							</h1>
+                        <button class="plus" type="button">
+                            <h1>+</h1></button>
+                        <div class="spoiler-content">
+                            За 2017 год было выдано ипотечных кредитов на сумму 2 трлн. рублей, сообщает Центральный банк России, что превышает показатель 2016 года (1,5 трлн. рублей).
+                            <br>
+                            <b>Основная причина роста популярности ипотеки — снижение ставок. В начале 2018 года они снизились до 9,5%. </b>
+                            <br> В.В. Путин выступил с предложением создать еще более доступные условия ипотечного кредитования уже к 2025 году. Исполнить поручение Президента предписано Совету по стратегическому развитию и приоритетным проектам, Центробанку РФ и Агентству ипотечного жилищного кредитования.
+                            <br> Также В.В. Путин заявил о необходимости увеличить объемы строительства жилья к 2025 году до 120 млн. кв. м. в год. Соответствующее поручение дано Президентом в декабре 2017 года.
+                        </div>
+                    </article>
+                </article>
+                <!-- ПРОГРАММА ПУТИНА!!! -->
+                <div class="clear--candidate"> </div>
+                <section class="program" id="second-anchor">
+                    <div class="program--container">
+                        <div class="clear"></div>
+                        <div class="about-candidate--span">
+                            <span>Программа Владимира Путина:</span>
+                        </div>
+                        <div class="clear--program"> </div>
+                        <div class="clear--program"> </div>
+                        <div class="program-item">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="program-span">
+                                <span>Курс на новейшие технологии!</span>
+                            </div>
+                            <div class="pr-clear"></div>
+                            <div class="clear--program"> </div>
+                            <h2>"Нужно эффективно использовать новые технологии, внедрять их"</h2>
+                            <h3>Владимир Путин</h3>
+                            <div class="pr-clear"></div>
+                            <div class="clear--candidate"></div>
+                            <div class="gallery autoplay items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                                <figure class="item">
+                                    <img src="images/index/techno/1.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/techno/2.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/techno/3.jpg" alt="">
+                                </figure>
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                            <div class="pr-clear"></div>
+                            <div class="program-item--text">
+                                Время не стоит на месте, и в современных условиях главное - равнение на передовые разработки и государственную поддежку науки!
+                            </div>
+                        </div>
+                        <hr class="after">
+                        <div class="program-item">
+                            <div class="program-span"><span>Дорогу молодым!</span></div>
+                            <div class="clear--program"> </div>
+                            <div class="pr-clear"></div>
+                            <h2>"Сейчас мы формируем целую систему, направленную на поиски и раскрытие молодых талантов. <br>
+							На их поддержке мы должны сосредоточить своё внимание."</h2>
+                            <h3>Владимир Путин</h3>
+                            <div class="pr-clear"></div>
+                            <div class="gallery autoplay items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                                <figure class="item">
+                                    <img src="images/index/young/1.png" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/young/2.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/young/3.jpg" alt="">
+                                </figure>
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                            <div class="pr-clear"></div>
+                            <div class="program-item--text">
+                                Молодёжь — это наше настоящее и будущее! Оказывая им всякую поддержку и передавая им опыт поколейний - мы создаём опору для сильной России будущего!
+                            </div>
+                        </div>
+                        <hr class="after">
+                        <div class="program-item">
+                            <div class="pr-clear"></div>
+                            <div class="program-span"><span>Семья - это маленькое государство!</span></div>
+                            <div class="pr-clear"></div>
+                            <div class="clear--program"> </div>
+                            <h2>"Нужно перезагрузить нашу политику демографического развития."</h2>
+                            <h3 style="margin-left: 50%">Владимир Путин</h3>
+                            <div class="pr-clear"></div>
+                            <div class="gallery autoplay items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                                <figure class="item">
+                                    <img src="images/index/deti/1.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/deti/2.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/deti/3.jpg" alt="">
+                                </figure>
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                            <div class="pr-clear"></div>
+                            <div class="pr-clear"></div>
+                            <div class="program-item--text">
+                                Очень важно понимать, что от каждого и от усилий всех нас вместе взятых зависит благополучие как в целом страны, так и отдельно взятой семьи.
+                            </div>
+                        </div>
+                        <hr class="after">
+                        <div class="program-item">
+                            <div class="pr-clear"></div>
+                            <div class="program-span"><span>Справедливая пенсионная система!</span></div>
+                            <div class="pr-clear"></div>
+                            <div class="clear--program"> </div>
+                            <h2>"Старость - это прежде всего мудрость и опыт."</h2>
+                            <h3>Владимир Путин</h3>
+                            <div class="pr-clear"></div>
+                            <div class="gallery autoplay items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                                <figure class="item">
+                                    <img src="images/index/pens/1.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/pens/2.jpg" alt="">
+                                </figure>
+                                <figure class="item">
+                                    <img src="images/index/pens/3.jpg" alt="">
+                                </figure>
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                            <div class="pr-clear"></div>
+                            <div class="program-item--text">
+                                Пенсионная система должна быть максимально простой и прозрачной. Необходиам серьёзная компания по обучению людей управлению своей пенсией.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Стать волонтёром -->
+                <section class="volunteers" id="third-anchor">
+                    <div class="volunteers-container">
+                        <div class="clear"></div>
+                        <div class="volunteers--span">
+                            <h1>Стань волонтером!</h1>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="clear"></div>
+                        <div class="volunteers-steps">
+                            <table>
+                                <tr>
+                                    <td class="vcell">
+                                        <img src="images/icons/004-file.png" alt="">
+                                        <br>
+                                        <br> 1. Заполнение анкеты
+                                    </td>
+                                    <td class="vcell">
+                                        <img src="images/icons/001-profile.png" alt="">
+                                        <br>
+                                        <br> 2. Прохождение собеседования
+                                    </td>
+                                    <td class="vcell">
+                                        <img src="images/icons/002-compass.png" alt="">
+                                        <br>
+                                        <br> 3. Определение функционала
+                                    </td>
+                                    <td>
+                                        <img src="images/icons/003-cogwheel.png" alt="">
+                                        <br>
+                                        <br> 4. Работа в штабе
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clear--candidate"></div>
+                        <div class="volunteers-text">
+                            Волонтеры штаба В.В. Путина – это те люди, которые ежедневно своими делами помогают Владимиру Владимировичу победить на выборах Президента Российской Федерации.
+                            <br> Мы объединяем людей всех возрастов, готовых исключительно на добровольной основе помогать в штабах, организовывать мероприятия, быть наблюдателями, делать реальные дела для победы В. В. Путина. Этой непростой и полезной деятельностью занимается наша команда Волонтеров Штаба Путина, частью которой может стать каждый.
+                            <br>
+                            <br>
+                            <button class="become" id="become" type="submit" onClick='location.href="become_volunteer.html"'>
+                                <a href="become_volunteer.html">Стать волонтёром</a></button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+                <!-- Боковая панель навигации -->
+                <div class="nav-wrapper">
+                    <div class="nav-container">
+                        <ul>
+                            <li class="nav-but">
+                                <a href="#logo"><img class="nav-img" src="images/icons/home.png" alt=""></a>
+                            </li>
+                            <li class="nav-but">
+                                <a href="#first-anchor"><img class="nav-img" src="images/icons/question-sign.png" alt=""></a>
+                            </li>
+                            <li class="nav-but">
+                                <a href="#second-anchor"><img class="nav-img" src="images/icons/check.png" alt=""></a>
+                            </li>
+                            <li class="nav-but">
+                                <a href="#third-anchor"><img class="nav-img" src="images/icons/plus-black-symbol.png" alt=""></a>
+                            </li>
+                            <li class="nav-but">
+                                <a href="#fourth-ahchor"><img class="nav-img" src="images/icons/thumbs-up.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Магазин мерча -->
+                <section class="shop" id="fourth-ahchor">
+                    <div class="shop--container">
+                        <div class="volunteers--span">
+                            <h1>Поддержи Владимира Путина!</h1>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="clear5"></div>
+                        <div class="shop-text">
+                            <p>
+                                Дорогие друзья!
+                                <br> Вы можете поддержать Владимира Путина, приобретя футболку или любой другой аксессуар вы морально поддерживаете нас на дальнейшую работу. ​
+                                <br>Это не просто магазин — это способ поддержать нас и получить на память что-то приятное. Все деньги, которые мы заработаем, будут потрачены на работу штабов и избирательную кампанию.
+                            </p>
+                            <br>
+                            <button style="margin-left: 0%" class="become" id="become" type="submit" onClick='location.href="become_volunteer.html"'>
+                                <a href="shop.html">Приобрести атрибутику</a></button>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </section>
+            </main>
+			<footer></footer>
+
+        </div>
+    </div>
+    <script>
+    function sendEmail() {
+        window.location = "mailto:putin@kremlin.ru?subject=Обращение от гражданина";
+    }
+    </script>
+    <script>
+    $(document).ready(function() {
+        $("a[href*=#]").on("click", function(e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('.plus').click(function() {
+            $(this).parent().children('div.spoiler-content').toggle('fast');
+            return false;
+        });
+    });
+    </script>
+</body>
+
+</html>
